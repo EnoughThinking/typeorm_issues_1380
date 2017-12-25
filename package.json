@@ -1,0 +1,30 @@
+{
+  "name": "typeorm_issues_1380",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "migrate:create": "ts-node ./node_modules/typeorm/cli.js migrations:create",
+    "migrate:generate": "ts-node ./node_modules/typeorm/cli.js migrations:generate",
+    "migrate:run": "ts-node ./node_modules/typeorm/cli.js migrations:run",
+    "test": "npm run migrate:generate -- -n init"
+  },
+  "dependencies": {
+    "@types/dotenv": "^4.0.2",
+    "@types/jsonwebtoken": "^7.2.5",
+    "class-transformer": "^0.1.8",
+    "class-validator": "^0.7.3",
+    "connection-string": "^0.4.1",
+    "dotenv": "^4.0.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.5.6",
+    "sqlite3": "^3.1.13",
+    "tweetnacl-util": "^0.15.0",
+    "typeorm": "^0.2.0-alpha.13",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "nodemon": "^1.14.3",
+    "ts-node": "^4.1.0"
+  }
+}
